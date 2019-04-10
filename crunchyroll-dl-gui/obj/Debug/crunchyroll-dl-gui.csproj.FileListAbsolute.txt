@@ -1,0 +1,10 @@
+C:\Users\Abu3safeer\source\repos\crunchyroll-dl-gui\crunchyroll-dl-gui\bin\Debug\crunchyroll-dl-gui.exe.config
+C:\Users\Abu3safeer\source\repos\crunchyroll-dl-gui\crunchyroll-dl-gui\bin\Debug\crunchyroll-dl-gui.exe
+C:\Users\Abu3safeer\source\repos\crunchyroll-dl-gui\crunchyroll-dl-gui\bin\Debug\crunchyroll-dl-gui.pdb
+C:\Users\Abu3safeer\source\repos\crunchyroll-dl-gui\crunchyroll-dl-gui\obj\Debug\crunchyroll-dl-gui.csprojAssemblyReference.cache
+C:\Users\Abu3safeer\source\repos\crunchyroll-dl-gui\crunchyroll-dl-gui\obj\Debug\crunchyroll_dl_gui.Properties.Resources.resources
+C:\Users\Abu3safeer\source\repos\crunchyroll-dl-gui\crunchyroll-dl-gui\obj\Debug\crunchyroll-dl-gui.csproj.GenerateResource.cache
+C:\Users\Abu3safeer\source\repos\crunchyroll-dl-gui\crunchyroll-dl-gui\obj\Debug\crunchyroll-dl-gui.csproj.CoreCompileInputs.cache
+C:\Users\Abu3safeer\source\repos\crunchyroll-dl-gui\crunchyroll-dl-gui\obj\Debug\crunchyroll-dl-gui.exe
+C:\Users\Abu3safeer\source\repos\crunchyroll-dl-gui\crunchyroll-dl-gui\obj\Debug\crunchyroll-dl-gui.pdb
+C:\Users\Abu3safeer\source\repos\crunchyroll-dl-gui\crunchyroll-dl-gui\obj\Debug\crunchyroll_dl_gui.MainForm.resources
