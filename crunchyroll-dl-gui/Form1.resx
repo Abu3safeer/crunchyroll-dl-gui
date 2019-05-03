@@ -145,15 +145,6 @@ ptBR - Português (Brasil)
 ptPT - Português (Portugal)
 ruRU - Русский</value>
   </data>
-  <data name="label5.ToolTip" xml:space="preserve">
-    <value>Here you will see the command line that will be executes when clicking on execute.
-
-You can use this programm as a command line generator 
-or
-you can store these commands to share them with otheres
-or 
-store them somewhere.</value>
-  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>39</value>
   </metadata>

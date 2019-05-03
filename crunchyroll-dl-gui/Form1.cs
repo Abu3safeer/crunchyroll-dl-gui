@@ -185,5 +185,10 @@ namespace crunchyroll_dl_gui
         {
             System.Diagnostics.Process.Start("crunchyroll-dl", Command);
         }
+
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Abu3safeer/crunchyroll-dl-gui");
+        }
     }
 }

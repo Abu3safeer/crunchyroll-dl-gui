@@ -58,11 +58,14 @@
             this.quality = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Information = new System.Windows.Forms.ToolTip(this.components);
-            this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.CommandLine = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label5 = new System.Windows.Forms.Label();
             this.Authentication.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // Authentication
@@ -276,11 +279,11 @@
             // downloadAll
             // 
             this.downloadAll.AutoSize = true;
-            this.downloadAll.Location = new System.Drawing.Point(414, 83);
+            this.downloadAll.Location = new System.Drawing.Point(413, 83);
             this.downloadAll.Name = "downloadAll";
-            this.downloadAll.Size = new System.Drawing.Size(80, 17);
+            this.downloadAll.Size = new System.Drawing.Size(86, 17);
             this.downloadAll.TabIndex = 15;
-            this.downloadAll.Text = "Dowload all";
+            this.downloadAll.Text = "Download all";
             this.Information.SetToolTip(this.downloadAll, "Download all collections (no dialog).");
             this.downloadAll.UseVisualStyleBackColor = true;
             this.downloadAll.CheckedChanged += new System.EventHandler(this.GenerateCommandLineLoader);
@@ -289,7 +292,7 @@
             // debug
             // 
             this.debug.AutoSize = true;
-            this.debug.Location = new System.Drawing.Point(414, 57);
+            this.debug.Location = new System.Drawing.Point(413, 57);
             this.debug.Name = "debug";
             this.debug.Size = new System.Drawing.Size(62, 17);
             this.debug.TabIndex = 8;
@@ -344,7 +347,8 @@
             "itIT",
             "ptBR",
             "ptPT",
-            "ruRU"});
+            "ruRU",
+            "none"});
             this.language.Location = new System.Drawing.Point(82, 80);
             this.language.Name = "language";
             this.language.Size = new System.Drawing.Size(110, 21);
@@ -415,22 +419,12 @@
             this.Information.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.Information.ToolTipTitle = "Information";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 221);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 13);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Command:";
-            this.Information.SetToolTip(this.label5, resources.GetString("label5.ToolTip"));
-            // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(12, 287);
+            this.button2.Location = new System.Drawing.Point(6, 79);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(740, 36);
+            this.button2.Size = new System.Drawing.Size(728, 36);
             this.button2.TabIndex = 16;
             this.button2.Text = "EXECUTE COMMAND";
             this.Information.SetToolTip(this.button2, "execute the command to crunchyrol-dl.\r\n(it will download to the same directory as" +
@@ -440,32 +434,66 @@
             // 
             // CommandLine
             // 
-            this.CommandLine.Location = new System.Drawing.Point(12, 237);
+            this.CommandLine.Location = new System.Drawing.Point(6, 19);
             this.CommandLine.Multiline = true;
             this.CommandLine.Name = "CommandLine";
             this.CommandLine.ReadOnly = true;
-            this.CommandLine.Size = new System.Drawing.Size(740, 44);
+            this.CommandLine.Size = new System.Drawing.Size(726, 54);
             this.CommandLine.TabIndex = 10;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.CommandLine);
+            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Location = new System.Drawing.Point(12, 218);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(740, 121);
+            this.groupBox3.TabIndex = 18;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Command";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(548, 199);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(105, 13);
+            this.linkLabel1.TabIndex = 19;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Abu3safeer@GitHub";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel1_LinkClicked);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(663, 199);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 13);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Version 1.3.6";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(764, 328);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(764, 346);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.CommandLine);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Authentication);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Crunchyroll-dl-gui";
+            this.Text = "Crunchyroll-dl-gui 1.3.6";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.Authentication.ResumeLayout(false);
             this.Authentication.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -496,7 +524,6 @@
         private System.Windows.Forms.CheckBox debug;
         private System.Windows.Forms.CheckBox downloadAll;
         private System.Windows.Forms.TextBox CommandLine;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox fileName;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.CheckBox ignoreDubs;
@@ -504,6 +531,9 @@
         private System.Windows.Forms.Button saveDownloadSettings;
         private System.Windows.Forms.CheckBox Episodes;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label5;
     }
 }
 
